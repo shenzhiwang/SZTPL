@@ -13,6 +13,8 @@
 
 ###技术支持：
 >深知网： [http://www.shenzhiwang.com](http://www.shenzhiwang.com "深知网")【暂未上线】
-> 
-![深知网  人人做深知](http://www.hdphp.com/shenzhiwang.jpg)
+
+##V5目录说明
+- Index--前台模板
+- Admin--后台模板
 
