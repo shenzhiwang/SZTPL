@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>内容列表</title>
+    <script type="text/javascript" src="../js/jquery-1.js"></script>
+<link href="../css/hdjs.css" rel="stylesheet" media="screen">
+<script src="../js/hdjs.js"></script>
+<script src="../js/slide.js"></script>
+<script src="../js/lhgcalendar.js"></script><link rel="stylesheet" href="../js/lhgcalendar.css">
+
+    <script type="text/javascript" src="..js/js.js"></script>
+    <script type="text/javascript" src="..js/content.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+<div class="wrap">
+    <form action="http://127.0.0.1/hdcms/index.php?a=Content&amp;c=Content&amp;m=content&amp;mid=1&amp;cid=10&amp;state=1" class="hd-form">
+        <input name="g" value="Hdcms" type="hidden">
+        <input name="a" value="Content" type="hidden">
+        <input name="c" value="Content" type="hidden">
+        <input name="m" value="content" type="hidden">
+        <input name="mid" value="1" type="hidden">
+        <input name="cid" value="10" type="hidden">
+        <input name="state" value="1" type="hidden">
+        <div class="search">
+            添加时间：<input id="begin_time" readonly="readonly" class="w80" name="search_begin_time" type="text">
+            <script>
+                $('#begin_time').calendar({format: 'yyyy-MM-dd'});
+            </script>
+            -
+            <input id="end_time" readonly="readonly" class="w80" name="search_end_time" type="text">
+            <script>
+                $('#end_time').calendar({format: 'yyyy-MM-dd'});
+            </script>
+            &nbsp;&nbsp;&nbsp;
+            <select name="flag" class="w100">
+                <option selected="selected" value="">全部</option>
+                
+                    <option value="热门">热门</option>
+                
+                    <option value="置顶">置顶</option>
+                
+                    <option value="推荐">推荐</option>
+                
+                    <option value="图片">图片</option>
+                
+                    <option value="精华">精华</option>
+                
+                    <option value="幻灯片">幻灯片</option>
+                
+                    <option value="站长推荐">站长推荐</option>
+                            </select>&nbsp;&nbsp;&nbsp;
+            <select name="search_type" class="w100">
+                <option selected="selected" value="1">标题</option>
+                <option value="2">简介</option>
+                <option value="3">用户名</option>
+                <option value="4">用户uid</option>
+            </select>&nbsp;&nbsp;&nbsp;
+            	关键字：
+            <input class="w200" placeholder="请输入关键字..." name="search_keyword" type="text">
+            <button class="hd-cancel" type="submit">搜索</button>
+        </div>
+    </form>
+    <div class="menu_list">
+        <ul>
+            <li>
+                <a href="" class="action">内容列表</a>
+            </li>
+            
+            <li>
+                <a href="">未审核</a>
+            </li>
+                        <li><a href="add.html" onclick="')">添加内容</a></li>
+                    </ul>
+    </div>
+    <table class="table2 hd-form">
+        <thead>
+        <tr>
+            <td class="w30">
+                <input id="select_all" type="checkbox">
+            </td>
+            <td class="w30">aid</td>
+            <td class="w30">排序</td>
+            <td>标题</td>
+            <td class="w50">状态</td>
+            <td class="w100">栏目</td>
+            <td class="w100">作者</td>
+            <td class="w80">修改时间</td>
+            <td class="w100">操作</td>
+        </tr>
+        </thead>
+            </table>
+    <div class="page1">
+        <span class="close">上一页</span><strong class="selfpage">1</strong><span class="close">下一页</span><span class="count">[共0页] [0条记录]</span>    </div>
+</div>
+
+<div class="position-bottom">
+    <input class="hd-cancel" value="全选" onclick="select_all('.table2')" type="button">
+    <input class="hd-cancel" value="反选" onclick="reverse_select('.table2')" type="button">
+        <input class="hd-cancel" onclick="order(1,10)" value="更改排序" type="button">
+            <input class="hd-cancel" onclick="del(1,10)" value="批量删除" type="button">
+            <input class="hd-cancel" onclick="audit(1,10,1)" value="审核" type="button">
+            <input class="hd-cancel" onclick="audit(1,10,0)" value="取消审核" type="button">
+            <input class="hd-cancel" onclick="move(1,10)" value="批量移动" type="button">
+    </div>
+
+<div style="position: absolute; display: none; z-index: 1978; left: 189.283px; top: 52px; width: 184px;"><table class="lcui_border" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="lcui_lt"></td><td class="lcui_t"></td><td class="lcui_rt"></td></tr><tr><td class="lcui_l"></td><td><div class="lcui_head"><table cellpadding="0" cellspacing="0" border="0" width="100%"><tbody><tr><td width="14"><a class="cui_pm" href="javascript:void(0);"></a></td><td width="40"><input class="cui_im" maxlength="4" value="5">月</td><td><a class="cui_nm" href="javascript:void(0);"></a></td><td width="14"><a class="cui_py" href="javascript:void(0);"></a></td><td width="60"><input class="cui_iy" maxlength="4" value="2014">年</td><td width="9"><a class="cui_ny" href="javascript:void(0);"></a></td></tr></tbody></table><div class="cui_ymlist" style="display: none; top: 33.7333px;"><table cellpadding="0" cellspacing="1" border="0" width="100%"><thead class="cui_ybar"><tr><td><a class="cui_pybar" href="javascript:void(0);">«</a></td><td><a class="cui_cybar" href="javascript:void(0);">×</a></td><td><a class="cui_nybar" href="javascript:void(0);">»</a></td></tr></thead><tbody class="cui_lbox"></tbody></table></div></div><div class="lcui_body"><table cellpadding="0" cellspacing="1" border="0"><thead><tr><td>日</td><td>一</td><td>二</td><td>三</td><td>四</td><td>五</td><td>六</td></tr></thead><tbody class="cui_db"><tr><td>27</td><td>28</td><td>29</td><td>30</td><td><a href="javascript:void(0);">1</a></td><td><a href="javascript:void(0);">2</a></td><td class="cui_today"><a href="javascript:void(0);">3</a></td></tr><tr><td><a href="javascript:void(0);">4</a></td><td><a href="javascript:void(0);">5</a></td><td><a href="javascript:void(0);">6</a></td><td><a href="javascript:void(0);">7</a></td><td><a href="javascript:void(0);">8</a></td><td><a href="javascript:void(0);">9</a></td><td><a href="javascript:void(0);">10</a></td></tr><tr><td><a href="javascript:void(0);">11</a></td><td><a href="javascript:void(0);">12</a></td><td><a href="javascript:void(0);">13</a></td><td><a href="javascript:void(0);">14</a></td><td><a href="javascript:void(0);">15</a></td><td><a href="javascript:void(0);">16</a></td><td><a href="javascript:void(0);">17</a></td></tr><tr><td><a href="javascript:void(0);">18</a></td><td><a href="javascript:void(0);">19</a></td><td><a href="javascript:void(0);">20</a></td><td><a href="javascript:void(0);">21</a></td><td><a href="javascript:void(0);">22</a></td><td><a href="javascript:void(0);">23</a></td><td><a href="javascript:void(0);">24</a></td></tr><tr><td><a href="javascript:void(0);">25</a></td><td><a href="javascript:void(0);">26</a></td><td><a href="javascript:void(0);">27</a></td><td><a href="javascript:void(0);">28</a></td><td><a href="javascript:void(0);">29</a></td><td><a href="javascript:void(0);">30</a></td><td><a href="javascript:void(0);">31</a></td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr></tbody></table></div><div class="cui_foot"><table cellpadding="0" cellspacing="0" border="0" width="100%"><tbody><tr><td class="lcui_today" align="center"><a class="cui_tbtn" href="javascript:void(0);">今天</a></td><td class="lcui_time" align="center"><input value="13" disabled="disabled" class="cui_hour" maxlength="2">:<input value="50" disabled="disabled" class="cui_minute" maxlength="2">:<input value="07" disabled="disabled" class="cui_second" maxlength="2"></td><td class="lcui_empty" align="center"><a class="cui_dbtn" href="javascript:void(0);">清空</a></td></tr></tbody></table></div></td><td class="lcui_r"></td></tr><tr><td class="lcui_lb"></td><td class="lcui_b"></td><td class="lcui_rb"></td></tr></tbody></table></div></body></html>

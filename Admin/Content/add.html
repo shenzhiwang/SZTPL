@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>添加文章</title>
+    <script type="text/javascript" src="../js/jquery-1.js"></script>
+<link href="../css/hdjs.css" rel="stylesheet" media="screen">
+<script src="../js/hdjs.js"></script>
+<script src="../js/slide.js"></script>
+<script src="../js/lhgcalendar.js"></script><link rel="stylesheet" href="../js/lhgcalendar.css">
+    <script type="text/javascript" src="../js/js.js"></script>
+    <script type="text/javascript" src="../js/add_edit.js"></script>
+    <link type="text/css" rel="stylesheet" href="../js/css.css">
+<script defer type="text/javascript" src="../js/zh-cn.js"></script><link rel="stylesheet" type="text/css" href="../css/ueditor.css"><script defer type="text/javascript" src="../js/codemirror.js"></script><link href="../css/codemirror.css" type="text/css" rel="stylesheet"></head>
+<body style="">
+<form style="" action="http://127.0.0.1/hdcms/index.php?a=Content&amp;c=Content&amp;m=add" method="post" onsubmit="return false;" id="add" class="hd-form">
+    <input name="mid" value="1" type="hidden">
+    <div style="" class="wrap">
+        <!--右侧缩略图区域-->
+        <div style="" class="content_left">
+          <div class="title-header">添加文章</div>
+            <table style="" class="table1">
+                <tbody style=""><tr>
+                    <th class="w80">标题<span class="star">*</span></th>
+                    <td>
+                        <input validate="0" id="title" name="title" class="title w400" type="text">
+                        
+                        <span class="validate-error" id="hd_title">标题不能为空</span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>栏目</th>
+                    <td>
+                        <input name="cid" value="11" type="hidden">
+                        BUG反馈                    </td>
+                </tr>
+                <!--标准模型显示正文字段-->
+                    <tr style="">
+                        <th>内容<span class="star">*</span></th>
+                        <td style="">
+                            <div style="" class="edui-default" id="hd_content">
+                             <textarea validate="1" name="description" class="w850 h350"></textarea></div></div></td>
+                    </tr>
+
+
+                <!--自定义字段-->
+                                <!--自定义字段-->
+
+
+            </tbody></table>
+        </div>
+    </div>
+    <div class="position-bottom">
+        <input class="hd-success" value="发表" type="submit">
+        <input class="hd-cancel" onclick="hd_close_window()" value="关闭" type="button">
+    </div>
+</form>
+
+<div class="edui-default" style="position: fixed; left: 0px; top: 0px; width: 0px; height: 0px;" id="edui_fixedlayer"><div style="display: none;" id="edui268" class="edui-popup  edui-bubble edui-default" onmousedown="return false;"> <div id="edui268_body" class="edui-popup-body edui-default"> <iframe class="edui-default" style="position:absolute;z-index:-1;left:0;top:0;background-color: transparent;" src="../js/a.htm" frameborder="0" height="100%" width="100%"></iframe> <div class="edui-shadow edui-default"></div> <div id="edui268_content" class="edui-popup-content edui-default">  </div> </div></div></div></body></html>

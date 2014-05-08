@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>栏目管理</title>
+
+<link href="../css/hdjs.css" rel="stylesheet" media="screen">
+<link type="text/css" rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="menu_list">
+        <ul>
+            <li><a href="javascript:;" class="action">栏目列表</a></li>
+            <li><a href="add.html">添加顶级栏目</a></li>
+        </ul>
+    </div>
+    <table class="table2 hd-form">
+        <thead>
+        <tr>
+            <td class="w30">CID</td>
+            <td class="w50">排序</td>
+            <td>栏目名称</td>
+            <td class="w100">类型</td>
+            <td class="w100">模型</td>
+            <td class="w50">访问</td>
+            <td class="w180">操作</td>
+        </tr>
+        </thead>
+        
+            <tbody><tr>
+                <td>1</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[1]" type="text">
+                </td>
+                <td>HDPHP</td>
+                <td>封面</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=1" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=1&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=1">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%201,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>10</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[10]" type="text">
+                </td>
+                <td>├─ 求助</td>
+                <td>栏目</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/help" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=10&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=10">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%2010,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>11</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[11]" type="text">
+                </td>
+                <td>├─ BUG反馈</td>
+                <td>栏目</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=11" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=11&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=11">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%2011,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>14</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[14]" type="text">
+                </td>
+                <td>└─ 代码分享</td>
+                <td>栏目</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=14" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=14&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=14">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%2014,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[3]" type="text">
+                </td>
+                <td>HDCMS</td>
+                <td>封面</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/hdcms" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=3&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=3">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%203,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>12</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[12]" type="text">
+                </td>
+                <td>├─ 安装使用</td>
+                <td>栏目</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=12" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=12&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=12">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%2012,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>13</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[13]" type="text">
+                </td>
+                <td>└─ Bug反馈</td>
+                <td>栏目</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=13" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=13&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=13">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%2013,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[6]" type="text">
+                </td>
+                <td>分享</td>
+                <td>封面</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=6" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=6&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=6">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%206,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[7]" type="text">
+                </td>
+                <td>├─ PHP</td>
+                <td>栏目</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=7" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=7&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=7">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%207,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[8]" type="text">
+                </td>
+                <td>├─ 前端</td>
+                <td>栏目</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=8" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=8&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=8">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%208,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[9]" type="text">
+                </td>
+                <td>└─ 服务器</td>
+                <td>栏目</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=9" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=9&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=9">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%209,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>15</td>
+                <td>
+                    <input class="w30" value="100" name="list_order[15]" type="text">
+                </td>
+                <td>每日一文</td>
+                <td>栏目</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=15" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=15&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=15">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%2015,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>
+                    <input class="w30" value="200" name="list_order[5]" type="text">
+                </td>
+                <td>站内公告</td>
+                <td>栏目</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Category&amp;m=category&amp;mid=1&amp;cid=5" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=5&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=5">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%205,mid:%201})})">删除</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>16</td>
+                <td>
+                    <input class="w30" value="1000" name="list_order[16]" type="text">
+                </td>
+                <td>公司简介</td>
+                <td>单文章</td>
+                <td>普通文章</td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Index&amp;c=Single&amp;m=show&amp;mid=1&amp;cid=16" target="_blank">访问</a>
+                </td>
+                <td>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add&amp;pid=16&amp;mid=1">添加子栏目</a>
+                    <span class="line">|</span>
+                    <a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=edit&amp;cid=16">修改</a>
+                    <span class="line">|</span>
+                    <a href="javascript:hd_confirm('%E7%A1%AE%E8%AF%81%E5%88%A0%E9%99%A4%E5%90%97%EF%BC%9F',function(){hd_ajax(CONTROL%20+%20'&amp;m=del',%20{cid:%2016,mid:%201})})">删除</a>
+                </td>
+            </tr>
+            </tbody></table>
+    <div class="h60"></div>
+</div>
+<div class="position-bottom">
+    <input class="hd-success" onclick="update_order()" value="更改排序" type="button">
+</div>
+
+</body></html>

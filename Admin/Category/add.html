@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>栏目管理</title>
+
+<link href="../css/hdjs.css" rel="stylesheet" media="screen">
+    <link type="text/css" rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+<form action="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=add" method="post" class="hd-form" onsubmit="return hd_submit(this,'http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=index');">
+<div class="wrap">
+    <div class="menu_list">
+        <ul>
+            <li><a href="http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category&amp;m=index">栏目列表</a></li>
+            <li><a href="javascript:;" class="action">添加栏目</a></li>
+        </ul>
+    </div>
+    <div class="tab">
+        <ul class="tab_menu">
+            <li lab="base"><a class="action" href="#">基本设置</a></li>
+        </ul>
+        <div class="tab_content">
+            <div class="action hd_tab_content_div" id="base">
+                <table class="table1">
+                    <tbody><tr>
+                        <th class="w100">内容模型</th>
+                        <td>
+                            <select name="mid" class="w200">
+                                
+                                    <option selected="selected" value="1">
+                                        普通文章                                    </option>
+                                                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>上级</th>
+                        <td>
+                            <select name="pid" class="w200">
+                                <option selected="selected" value="0">一级栏目</option>
+                                
+                                    <option value="1">HDPHP</option>
+                                
+                                    <option value="10">├─ 求助</option>
+                                
+                                    <option value="11">├─ BUG反馈</option>
+                                
+                                    <option value="14">└─ 代码分享</option>
+                                
+                                    <option value="3">HDCMS</option>
+                                
+                                    <option value="12">├─ 安装使用</option>
+                                
+                                    <option value="13">└─ Bug反馈</option>
+                                
+                                    <option value="6">分享</option>
+                                
+                                    <option value="7">├─ PHP</option>
+                                
+                                    <option value="8">├─ 前端</option>
+                                
+                                    <option value="9">└─ 服务器</option>
+                                
+                                    <option value="15">每日一文</option>
+                                
+                                    <option value="5">站内公告</option>
+                                
+                                    <option value="16">公司简介</option>
+                                                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>栏目名称</th>
+                        <td>
+                            <input validate="0" name="catname" required="" class="w300" type="text"><span class="validate-error" id="hd_catname">栏目名称不能为空</span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th>在导航显示</th>
+                        <td>
+                            <label><input name="cat_show" value="1" checked="checked" type="radio"> 是</label>
+                            <label><input name="cat_show" value="0" type="radio"> 否</label>
+                            <span class="validate-message">前台使用&lt;channel&gt;标签时是否显示</span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+           
+</div>
+<div class="position-bottom">
+    <input class="hd-success" value="确定" type="submit">
+    <input class="hd-cancel" value="取消" onclick="location.href='http://127.0.0.1/hdcms/index.php?a=Category&amp;c=Category'" type="button">
+</div>
+</form>
+
+
+</body></html>

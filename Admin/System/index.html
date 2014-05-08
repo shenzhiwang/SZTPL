@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>网站配置</title>
+
+<link href="../css/hdjs.css" rel="stylesheet" media="screen">
+
+<script src="11111_files/lhgcalendar.js"></script><link rel="stylesheet" href="../css/lhgcalendar.css">
+
+    <link type="text/css" rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+<form action="http://127.0.0.1/hdcms/index.php?a=Config&amp;c=Config&amp;m=edit" method="post" class="hd-form" onsubmit="return hd_submit(this)">
+    <div class="wrap">
+        <div class="title-header">温馨提示</div>
+        <div class="help">
+            1 模板中使用配置项方法为{ $hd.config.变量名}
+            <br>
+            2 请仔细修改配置项，不当设置将影响网站的性能与安全 <br>
+            3 在不了解配置项意义时，请不要随意修改
+        </div>
+        <div class="tab">
+            <ul class="tab_menu">
+                <li lab="web"><a class="action" href="#">站点配置</a></li>
+
+            </ul>
+            <div class="tab_content">
+                <div class="action hd_tab_content_div" id="web">
+                    <table class="table1">
+                        
+                                                            <tbody><tr>
+                                    <th class="w150">网站名称</th>
+                                    <td class="w250">
+                                        <input name="1" value="HDCMS内容管理系统" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>webname</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                            
+                                                            <tr>
+                                    <th class="w150">网站关键词</th>
+                                    <td class="w250">
+                                        <input name="5" value="php培训,php实训,深知网" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>keywords</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">网站描述</th>
+                                    <td class="w250">
+                                        <textarea class="w400 h100" name="6">深知网顶尖PHP培训 内容全面 全程实战!业内顶级讲师亲自授课,千余课时独家视频教程免费下载,超百G原创视频资源,实力不容造假!010-64825057</textarea>
+                                    </td>
+                                    <td>
+                                        description
+                                    </td>
+                                </tr>  
+                                <tr>
+                                    <th class="w150">网站版权信息</th>
+                                    <td class="w250">
+                                        <input name="4" value="Copyright © 2012-2013 HDCMS 深知网 版权所有" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>copyright</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>  
+
+                                                            <tr>
+                                    <th class="w150">ICP备案号</th>
+                                    <td class="w250">
+                                        <input name="152" value="DFVADS@D.COM" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>ICP</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">网站开启</th>
+                                    <td class="w250">
+                                        <label><input name="10" value="1" checked="checked" type="radio"> 是</label>
+                                        <label><input name="10" value="0" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：web_open <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                      
+                                                            <tr>
+                                    <th class="w150">网站关闭提示信息</th>
+                                    <td class="w250">
+                                        <input name="150" value="网站维护中，请稍候访问" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>web_close_message</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                          </tbody></table>
+                </div>
+                <div class="hd_tab_content_div" id="rewrite">
+                    <table class="table1">
+                        
+                                                            <tbody><tr>
+                                    <th class="w150">开启PATHINFO访问</th>
+                                    <td class="w250">
+                                        <label><input name="166" value="1" type="radio"> 是</label>
+                                        <label><input name="166" value="0" checked="checked" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：pathinfo_type <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 需要环境支持
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">开启伪静态</th>
+                                    <td class="w250">
+                                        <label><input name="167" value="1" type="radio"> 是</label>
+                                        <label><input name="167" value="0" checked="checked" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：open_rewrite <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 1 服务器需要支持Rewrtie 2 将HDCMS根目录中的htaccess.txt改名为.htaccess
+                                    </td>
+                                </tr>                                            </tbody></table>
+                </div>
+                <div class="hd_tab_content_div" id="upload">
+                    <table class="table1">
+                        
+                                                            <tbody><tr>
+                                    <th class="w150">上传目录</th>
+                                    <td class="w250">
+                                        <input name="16" value="upload" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>upload_path</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">上传图片目录</th>
+                                    <td class="w250">
+                                        <input name="17" value="img" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>upload_img_path</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">允许上传文件类型</th>
+                                    <td class="w250">
+                                        <input name="18" value="jpg,jpeg,png,bmp,gif" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>allow_type</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">允许上传大小（字节）</th>
+                                    <td class="w250">
+                                        <input name="19" value="2048000" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        allow_size
+                                    </td>
+                                </tr>                                            </tbody></table>
+                </div>
+                <div class="hd_tab_content_div" id="member">
+                    <table class="table1">
+                        
+                                                            <tbody><tr>
+                                    <th class="w150">会员注册是否需要审核</th>
+                                    <td class="w250">
+                                        <label><input name="115" value="1" type="radio"> 是</label>
+                                        <label><input name="115" value="0" checked="checked" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：member_verify <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">会员注册是否显示验证码</th>
+                                    <td class="w250">
+                                        <label><input name="116" value="1" checked="checked" type="radio"> 是</label>
+                                        <label><input name="116" value="0" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：reg_show_code <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">注册成功是否发邮件</th>
+                                    <td class="w250">
+                                        <label><input name="119" value="1" checked="checked" type="radio"> 是</label>
+                                        <label><input name="119" value="0" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：reg_email <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">2次注册间隔间间</th>
+                                    <td class="w250">
+                                        <input name="120" value="0" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        reg_interval
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">新注册会员初始组</th>
+                                    <td class="w250">
+                                       <select name="121"><option value="4" selected="selected">幼儿园</option><option value="5">小学生</option><option value="6">中学生</option><option value="7">高中生</option><option value="8">大学生</option><option value="9">研究生</option><option value="10">博士</option>                                    </select>
+                                    </td>
+                                    <td>
+                                        default_member_group
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">开启会员中心</th>
+                                    <td class="w250">
+                                        <label><input name="149" value="1" checked="checked" type="radio"> 是</label>
+                                        <label><input name="149" value="0" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：member_open <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">初始积分</th>
+                                    <td class="w250">
+                                        <input name="158" value="100" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>init_credits</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">评论间隔时间</th>
+                                    <td class="w250">
+                                        <input name="164" value="10" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>comment_step_time</strong>
+                                        <span class="validate-message">必须大于1（单位秒)</span>
+                                    </td>
+                                </tr>                                            </tbody></table>
+                </div>
+                <div class="hd_tab_content_div" id="content">
+                    <table class="table1">
+                        
+                                                            <tbody><tr>
+                                    <th class="w150">下载远程图片</th>
+                                    <td class="w250">
+                                        <label><input name="142" value="1" type="radio"> 是</label>
+                                        <label><input name="142" value="0" checked="checked" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：down_remote_pic <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">截取内容为摘要</th>
+                                    <td class="w250">
+                                        <label><input name="143" value="1" checked="checked" type="radio"> 是</label>
+                                        <label><input name="143" value="0" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：auto_desc <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">提取内容图片为缩略图</th>
+                                    <td class="w250">
+                                        <label><input name="144" value="1" type="radio"> 是</label>
+                                        <label><input name="144" value="0" checked="checked" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：auto_thumb <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">上传图片宽度超过此值，进行缩放</th>
+                                    <td class="w250">
+                                        <input name="145" value="600" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        upload_img_max_width
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">上传图片高度超过此值，进行缩放</th>
+                                    <td class="w250">
+                                        <input name="146" value="600" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        upload_img_max_height
+                                    </td>
+                                </tr>                                            </tbody></table>
+                </div>
+                <div class="hd_tab_content_div" id="water">
+                    <table class="table1">
+                        
+                                                            <tbody><tr>
+                                    <th class="w150">上传文件加水印</th>
+                                    <td class="w250">
+                                        <label><input name="20" value="1" type="radio"> 是</label>
+                                        <label><input name="20" value="0" checked="checked" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：water_on <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">水印文字</th>
+                                    <td class="w250">
+                                        <input name="128" value="houdunwang.com" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>water_text</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">文字大小</th>
+                                    <td class="w250">
+                                        <input name="129" value="16" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        water_text_size
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">水印图像</th>
+                                    <td class="w250">
+                                        <input name="130" value="data/water/water.png" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>water_img</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">水印图片透明度</th>
+                                    <td class="w250">
+                                        <input name="131" value="0" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        water_pct
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">图片压缩比</th>
+                                    <td class="w250">
+                                        <input name="132" value="90" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        water_quality
+                                    </td>
+                                </tr>                        
+                            <tr>
+    <th class="w150">水印位置</th>
+    <td>
+        <table class="w300 table3">
+            <tbody><tr>
+                <td>
+                    <label><input name="133" value="1" type="radio"> 左上</label>
+                </td>
+                <td>
+                    <label><input name="133" value="2" type="radio"> 上中</label>
+                </td>
+                <td>
+                    <label><input name="133" value="3" type="radio"> 上右</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><input name="133" value="4" type="radio"> 中左</label>
+                </td>
+                <td>
+                    <label><input name="133" value="5" type="radio"> 中间</label>
+                </td>
+                <td>
+                    <label><input name="133" value="6" type="radio"> 中右</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><input name="133" value="7" type="radio"> 下左</label>
+                </td>
+                <td>
+                    <label><input name="133" value="8" type="radio"> 下中</label>
+                </td>
+                <td>
+                    <label><input name="133" value="9" checked="checked" type="radio"> 下右</label>
+                </td>
+            </tr>
+        </tbody></table>
+    </td>
+</tr>                                            </tbody></table>
+                </div>
+                <div class="hd_tab_content_div" id="safe">
+                    <table class="table1">
+                        
+                                                            <tbody><tr>
+                                    <th class="w150">cookie加密KEY</th>
+                                    <td class="w250">
+                                        <input name="15" value="houdunwang.com" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>auth_key</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">表单使用令牌验证</th>
+                                    <td class="w250">
+                                        <label><input name="123" value="1" type="radio"> 是</label>
+                                        <label><input name="123" value="0" checked="checked" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：token_on <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">日志文件加密KEY</th>
+                                    <td class="w250">
+                                        <input name="124" value="houdunwang.com" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>log_key</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">SESSION_NAME值</th>
+                                    <td class="w250">
+                                        <input name="125" value="hdsid" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>session_name</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">站长令牌名称</th>
+                                    <td class="w250">
+                                        <input name="126" value="SUPER_ADMIN" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>super_admin_key</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                                            </tbody></table>
+                </div>
+                <div class="hd_tab_content_div" id="optimize">
+                    <table class="table1">
+                        
+                                                            <tbody><tr>
+                                    <th class="w150">首页缓存时间</th>
+                                    <td class="w250">
+                                        <input name="161" value="-1" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>cache_index</strong>
+                                        <span class="validate-message">（单位：秒，-1不缓存 0永久缓存)</span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">栏目缓存时间</th>
+                                    <td class="w250">
+                                        <input name="162" value="-1" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>cache_category</strong>
+                                        <span class="validate-message">（单位：秒，-1不缓存 0永久缓存)</span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">文章缓存时间</th>
+                                    <td class="w250">
+                                        <input name="163" value="-1" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>cache_content</strong>
+                                        <span class="validate-message">（单位：秒，-1不缓存 0永久缓存)</span>
+                                    </td>
+                                </tr>                                            </tbody></table>
+                </div>
+                <div class="hd_tab_content_div" id="grand">
+                    <table class="table1">
+                        
+                                                            <tbody><tr>
+                                    <th class="w150">数据备份目录</th>
+                                    <td class="w250">
+                                        <input name="9" value="backup" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        变量名: <strong>backup_dir</strong>
+                                        <span class="validate-message"></span>
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">删除文章先放入回收站</th>
+                                    <td class="w250">
+                                        <label><input name="134" value="1" type="radio"> 是</label>
+                                        <label><input name="134" value="0" checked="checked" type="radio"> 否</label>
+                                    </td>
+                                    <td>
+                                        变量名：del_content_model <span style="color:#357EBD;font-weight: bold;padding-left:20px;">说明</span>: 
+                                    </td>
+                                </tr>                        
+                                                            <tr>
+                                    <th class="w150">下载远程资源允许最大值</th>
+                                    <td class="w250">
+                                        <input name="136" value="500" class="w400" type="text">
+                                    </td>
+                                    <td>
+                                        down_remove_pic_size
+                                    </td>
+                                </tr>                                            </tbody></table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="position-bottom">
+        <input class="hd-success" value="确定" type="submit">
+    </div>
+</form>
+
+</body></html>

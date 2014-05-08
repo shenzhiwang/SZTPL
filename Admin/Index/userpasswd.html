@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>修改密码</title>
+<link href="../css/hdjs.css" rel="stylesheet" media="screen">
+
+<link type="text/css" rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="title-header">修改密码</div>
+    <form action="http://127.0.0.1/hdcms/index.php?a=Role&amp;c=Personal&amp;m=edit_password" method="post" onsubmit="return hd_submit(this)" class="hd-form">
+        <table class="table1">
+            <tbody><tr>
+                <th class="w100">管理员名称</th>
+                <td>
+                    admin                </td>
+            </tr>
+            <tr>
+                <th class="w100">旧密码</th>
+                <td>
+                    <input ajax_validate="0" validate="0" name="old_password" class="w200" type="password"><span id="hd_old_password"></span>
+                </td>
+            </tr>
+            <tr>
+                <th class="w100">新密码</th>
+                <td>
+                    <input validate="0" name="new_password" class="w200" type="password"><span id="hd_new_password"></span>
+                </td>
+            </tr>
+            <tr>
+                <th class="w100">确认密码</th>
+                <td>
+                    <input validate="0" name="c_password" class="w200" type="password"><span id="hd_c_password"></span>
+                </td>
+            </tr>
+        </tbody></table>
+        <div class="position-bottom">
+            <input class="hd-success" value="确定" type="submit">
+        </div>
+    </form>
+</div>
+
+</body></html>

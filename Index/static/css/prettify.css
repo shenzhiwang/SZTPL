@@ -1,0 +1,114 @@
+.pln {
+	color: rgb(0, 0, 0);
+}
+.str {
+	color: rgb(0, 136, 0);
+}
+.kwd {
+	color: rgb(0, 0, 136);
+}
+.com {
+	color: rgb(136, 0, 0);
+}
+.typ {
+	color: rgb(102, 0, 102);
+}
+.lit {
+	color: rgb(0, 102, 102);
+}
+.pun {
+	color: rgb(102, 102, 0);
+}
+.opn {
+	color: rgb(102, 102, 0);
+}
+.clo {
+	color: rgb(102, 102, 0);
+}
+.tag {
+	color: rgb(0, 0, 136);
+}
+.atn {
+	color: rgb(102, 0, 102);
+}
+.atv {
+	color: rgb(0, 136, 0);
+}
+.dec {
+	color: rgb(102, 0, 102);
+}
+.var {
+	color: rgb(102, 0, 102);
+}
+.fun {
+	color: red;
+}
+.str {
+	color: rgb(0, 102, 0);
+}
+.kwd {
+	color: rgb(0, 0, 102); font-weight: bold;
+}
+.com {
+	color: rgb(102, 0, 0); font-style: italic;
+}
+.typ {
+	color: rgb(68, 0, 68); font-weight: bold;
+}
+.lit {
+	color: rgb(0, 68, 68);
+}
+.pun {
+	color: rgb(68, 68, 0);
+}
+.opn {
+	color: rgb(68, 68, 0);
+}
+.clo {
+	color: rgb(68, 68, 0);
+}
+.tag {
+	color: rgb(0, 0, 102); font-weight: bold;
+}
+.atn {
+	color: rgb(68, 0, 68);
+}
+.atv {
+	color: rgb(0, 102, 0);
+}
+ol.linenums {
+	list-style: decimal; margin: 0px 0px 0px 40px; color: rgb(43, 165, 216); white-space: normal;
+}
+li.L0 {
+	padding: 0px 5px; line-height: 23px; text-indent: 0px; border-left-color: rgb(209, 215, 220); border-left-width: 1px; border-left-style: solid; background-color: rgb(250, 250, 250);
+}
+li.L1 {
+	padding: 0px 5px; line-height: 23px; text-indent: 0px; border-left-color: rgb(209, 215, 220); border-left-width: 1px; border-left-style: solid; background-color: rgb(250, 250, 250);
+}
+li.L2 {
+	padding: 0px 5px; line-height: 23px; text-indent: 0px; border-left-color: rgb(209, 215, 220); border-left-width: 1px; border-left-style: solid; background-color: rgb(250, 250, 250);
+}
+li.L3 {
+	padding: 0px 5px; line-height: 23px; text-indent: 0px; border-left-color: rgb(209, 215, 220); border-left-width: 1px; border-left-style: solid; background-color: rgb(250, 250, 250);
+}
+li.L4 {
+	padding: 0px 5px; line-height: 23px; text-indent: 0px; border-left-color: rgb(209, 215, 220); border-left-width: 1px; border-left-style: solid; background-color: rgb(250, 250, 250);
+}
+li.L5 {
+	padding: 0px 5px; line-height: 23px; text-indent: 0px; border-left-color: rgb(209, 215, 220); border-left-width: 1px; border-left-style: solid; background-color: rgb(250, 250, 250);
+}
+li.L6 {
+	padding: 0px 5px; line-height: 23px; text-indent: 0px; border-left-color: rgb(209, 215, 220); border-left-width: 1px; border-left-style: solid; background-color: rgb(250, 250, 250);
+}
+li.L7 {
+	padding: 0px 5px; line-height: 23px; text-indent: 0px; border-left-color: rgb(209, 215, 220); border-left-width: 1px; border-left-style: solid; background-color: rgb(250, 250, 250);
+}
+li.L8 {
+	padding: 0px 5px; line-height: 23px; text-indent: 0px; border-left-color: rgb(209, 215, 220); border-left-width: 1px; border-left-style: solid; background-color: rgb(250, 250, 250);
+}
+li.L9 {
+	padding: 0px 5px; line-height: 23px; text-indent: 0px; border-left-color: rgb(209, 215, 220); border-left-width: 1px; border-left-style: solid; background-color: rgb(250, 250, 250);
+}
+code.prettyprint {
+	margin: 10px 0px; padding: 2px; border: 1px solid rgb(209, 215, 220); font-family: Consolas, "Liberation Mono", Courier, monospace, Î¢ÈíÑÅºÚ; font-size: 14px; display: block; white-space: normal; position: relative; word-wrap: break-word;
+}

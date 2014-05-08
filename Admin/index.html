@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <title>HDCMS - 后台管理中心</title>
+<link rel="stylesheet" type="text/css" href="css/quick_menu.css">
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<link rel="stylesheet" type="text/css" href="css/hdjs.css">
+<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+<!-- <script type="text/javascript" src="js/admmenu.js"></script>-->
+<script type="text/javascript" src="js/admin.js"></script> 
+
+<script type="text/javascript" src="js/quick_menu.js"></script>
+</head>
+<body>
+<div class="nav">
+    <!--头部左侧导航-->
+    <div class="top_menu">
+            <a href="javascript:" class="bg ">首页</a>
+            <span class="dn">1</span>
+            <a href="javascript:">内容</a>
+            <span class="dn">2</span>
+            <a href="javascript:">会员</a>
+            <span class="dn">3</span>
+            <a href="javascript:" >系统</a>
+            <span class="dn">4</span>
+    </div>
+    <!--头部左侧导航-->
+    <!--头部右侧导航-->g
+    <div class="r_menu">
+        <!-- {$hd.session.rname} : {$hd.session.username} --> 超级管理员 : admin  <a href="{|U:'Login/Login/out'}" target="_self">[退出]</a>
+        <span>|</span>
+        <a href="javascript:hd_ajax('{|U:'Cache/Cache/update_all'}');">更新全站缓存</a>
+        <span>|</span>
+        <a href="__WEB__" target="_blank">前台首页</a>
+        <span>|</span>
+        <a href="{|U:'Index/Index/index',array('g'=>'Member')}" target="_blank">会员中心</a>
+    </div>
+    <!--头部右侧导航-->
+</div>
+<!--左侧导航-->
+<div class="main">
+    <!--主体左侧导航-->
+    <div class="left_menu">
+      <div class="left_m" id="1">
+        <dl>
+            <dt>个人信息</dt>
+            <dd>
+                <a class="action" href="javascript:;">修改密码</a>
+                <span class="dn">Index/userpasswd</span>
+                <a url="" href="javascript:;">修改个人信息</a>
+                <span class="dn">Index/userinfo</span>
+            </dd>
+        </dl>
+    </div>
+    <div class="left_m dn" id="2">
+        <dl>
+            <dt>内容管理</dt>
+            <dd>
+                <a class="action" href="javascript:;">管理内容</a>
+                <span class="dn">Content/content</span>
+                <a href="javascript:;">栏目管理</a>
+                <span class="dn">Category/category</span>
+                
+                <a href="javascript:;">审核内容</a>
+                <span class="dn">Content/verify</span>
+            </dd>
+        </dl>
+    </div>
+    <div class="left_m dn" id="3">
+        <dl>
+            <dt>会员组管理</dt>
+            <dd>
+                <a href="javascript:;">管理会员组</a>
+                <span class="dn">Group/index</span>
+            </dd>
+        </dl>
+        <dl>
+            <dt>会员管理</dt>
+            <dd>
+                <a href="javascript:;">审核会员</a>
+                <span class="dn">User/index</span>
+                <a href="javascript:;">会员管理</a>
+                <span class="dn">User/list</span>
+            </dd>
+        </dl>
+    </div>
+        <div class="left_m dn" id="4">
+        <dl>
+            <dt>系统设置</dt>
+            <dd>
+                <a href="javascript:;">网站配置</a>
+                <span class="dn">System/index</span>
+            </dd>
+        </dl>
+        <dl>
+            <dt>管理员设置</dt>
+            <dd>
+                <a href="javascript:;">角色管理</a>
+                <span class="dn">System/Role/index</span>
+                <a href="javascript:;">管理员管理</a>
+                <span class="dn">System/Admin/index</span>
+            </dd>
+        </dl>
+    </div>
+    <!--/主体左侧导航-->
+</div>
+<!--/左侧导航-->
+    <!--内容显示区域-->
+    <div class="menu_nav">
+
+        <div class="favorite_menu">
+            <span>当前位置：首页</span>
+            
+        </div>
+        <div class="subm"><span></span></div>
+    </div>
+    <div class="top_content">
+      <iframe src="welcome.html" nid="0" scrolling="auto" frameborder="0"
+                style="height: 100%;width: 100%;"></iframe>
+    </div>
+    <!--内容显示区域-->
+</div>
+<div id="quick_menu">
+    <div class="set">
+        <a url="{|U:'Menu/set_favorite'}" onclick="get_content(this,90001)" href="javascript:;" nid="90001">设置</a>
+    </div>
+    <div
+        style="float:left;width:1px;margin-right:5px;overflow: hidden;background: #999999;height:15px;margin-top:12px;"></div>
+    <div class="bottom-menu">
+        <list from="$favorite_menu" name="f">
+            <a url="?a={$f.app}&c={$f.control}&m={$f.method}&nid={$f.nid}"
+               onclick="get_content(this,{$f.nid})" href="javascript:;" nid="{$f.nid}">{$f.title}</a>
+        </list>
+    </div>
+    <div class="quick-hide">
+        <a href="javascript:quick_menu_hide();">隐藏</a>
+    </div>
+</div>
+<div id="show_quick_menu" onclick="show_quick_menu()">
+    显示
+</div>
+<!--加载后触发第一个顶级菜单-->
+<script>
+    $(".left_menu #id=1").trigger("click");
+</script>
+</body>
+</html>
