@@ -133,7 +133,7 @@ background: none repeat scroll 0% 0% #FFF;
 
 	
 /* 导航区域 */
-	#hd{/*position:fixed;*position:absolute;*/top:125px;left:0;width:1000px; margin:0 auto;/*background:#be0028;*/background: url(../images/hd_bg.png); z-index:1500;font-weight: bold; margin-top:5px;}
+	#hd{/*position:fixed;*position:absolute;*/top:125px;left:0;width:1000px; margin:0 auto;/*background:#be0028;*/background: url(../images/sz_nav.png); z-index:1500;font-weight: bold; margin-top:5px;}
 	#nav{position:relative;width:1000px;margin:0 auto;height:45px;font-size:16px;}
 		#nav .logo{display:block;float:left;width:auto;height:45px;line-height:45px;overflow:hidden; }
 		#nav a.home{display:block;float:left;width:25px;height:32px;margin:11px 15px 0 15px;background:url(../images/home.png) left center no-repeat;overflow:hidden;}
